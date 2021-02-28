@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <title>cart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Ziyad Alwagdani">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
+    <script src="myScript.js" async></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    
+  </head>
+  <body>
+    <!--Header-->
+    <div class="banner">
+      <img id="banner-icon" src="img/banner-icon.svg" alt="Banenr Icon">
+      <a id="banner-text" href="">Kitchen online appointment booking</a>
+  </div>    
+
+  <header>
+      <div class="menu-nav-container mt-3">
+          
+          <div class="nav-container">
+
+              <img class="index.html" src="img/logo.svg" alt="IKEA Logo">
+
+              <nav>
+                  <ul>
+                      <li><a class="a1" href="">Products</a></li>
+                      <li><a class="a1" id="rooms" href="">Rooms</a></li>
+                  </ul>
+              </nav>
+
+
+              <div class="search-container">
+                <input id="myInput" onclick="search()" placeholder="What are you looking for?" type="text" class="search">
+                <button id="searchbtn" type="button" onclick="getInputValue();">Get Value</button>
+                <script src="search.js"></script>
+            </div>
+
+                <nav class="icons-nav">
+                  <a href=""><img src="img/user-icon.svg" alt="User Icon"></a>
+                  <a href="wishlist.html"><img src="img/wishlist-icon.svg" alt="Wish list Icon"></a>
+                  <a href="cartPage.html"><img class="bag" src="img/shopping-bag-icon.svg" alt="Shopping bag Icon"></a>
+                 
+              </nav>
+
+              
+
+          </div>
+
+          
+
+
+      </div>
+  </header>
+    <!--Search Information-->
+
+<section class="place">
+<p id="TheWord">Showing matches for <strong>"desk"</strong></p>
+<table class="table1">
+    <tr class="row1">
+        <td  class="t1">
+            <a href="#" class="types">All 818 </a>
+        </td>
+        <td  class="t1">
+            <a href="#" class="types">Product 635 </a>
+        </td>
+        <td  class="t1">
+            <a href="#" class="types">Page 181</a>
+        </td>
+    </tr>
+</table>
+
+
+</div>
+<!--Sorting-->
+<div class="fixed">
+    <table class="table2">
+        <tr>
+           <td class="t2"><a href="#" class="types">Sort</a></td> 
+           <td class="t2"><a href="#" class="types">Size</a></td> 
+           <td class="t2"><a href="#" class="types">Price</a></td> 
+           <td class="t2"><a href="#" class="types">Color</a></td> 
+           <td class="t2"><a href="#" class="types">Category</a></td> 
+           <td class="t2"><a href="#" class="types">Buyable online</a></td> 
+           <td class="t2"><a href="#" class="types">Special price</a></td> 
+           <td class="t2"><a href="#" class="types">New products</a></td> 
+           <td class="t2"><a href="#" class="types">Feature</a></td> 
+            
+            
+        </tr>
+        
+    </table>
+</section>
+<!--Items, First Line-->
+<section class="s1 place">
+    <a href="#" class="addToWishlist" onclick="addToWishlistbtn()"><i class="far fa-heart  appear1 "></i></a>
+    <div class="q1">
+  
+       <img class="elementImg ItemsImg zine"  src="https://www.ikea.com/sa/en/images/products/micke-desk-white__0736018_PE740345_S5.JPG?f=xl" alt="whiteTable">
+       <a href="#"> <img class="ItemsImg zhide" src="https://www.ikea.com/sa/en/images/products/micke-desk-white__0851508_PE565256_S5.JPG?f=xl" alt="whiteTable"></a>
+       
+       
+    </div>
+    <div class="data">
+        <h4 class="elementName"><a href="#" class="types t1 " >MICKE</a></h4>
+        <p class="elementDes">Desk, 105x50 cm</p>
+        <h3 class="elementPrice">395 SR</h3>
+        <p>More variants</p>
+        
+        <a href="#"><img class="Other" src="https://www.ikea.com/sa/en/images/products/micke-desk-white-anthracite__0921886_PE787989_S5.JPG?f=u>"></a>
+        <a href="#"><img class="Other" src="https://www.ikea.com/sa/en/images/products/micke-desk-anthracite-red__0921882_PE787985_S5.JPG?f=u"></a>
+        <a href="#"><img class="Other" src="https://www.ikea.com/sa/en/images/products/micke-desk-black-brown__0735981_PE740299_S5.JPG?f=u"></a>
+
+        
+       <button class="addToCart btn btn-outline-info m-3 " href="#" onclick="addToCartbtn()">Add to cart</i></button>
+    </div>
+     
+</section>
+
+
+<section class="s1">
+    <a href="#" class="addToWishlist" onclick="addToWishlistbtn()"><i class="far fa-heart  appear1 "></i></a>
+    <div class="q1">
+        <img  class="ItemsImg zine elementImg" src="https://www.ikea.com/sa/en/images/products/micke-desk-white__0736022_PE740349_S5.JPG?f=xl" alt="whiteTable">
+       <a href="#"> <img class="ItemsImg zhide" src="https://www.ikea.com/sa/en/images/products/micke-desk-white__0921905_PE787996_S5.JPG?f=xl" alt="whiteTable"></a>
+       
+       
+    </div>
+    <div class="data">
+        <h4 class="elementName"><a href="#" class="types t1">MICKE 2</a></h4>
+        <p class="elementDes">Desk, 75x50 cm</p>
+        <h3 class="elementPrice">214 SR</h3>
+        <p>More variants</p>
+        
+        <a href="#"><img class="Other" src="https://www.ikea.com/sa/en/images/products/micke-desk-black-brown__0736021_PE740348_S5.JPG?f=xu"></a>
+        <button class="addToCart btn btn-outline-info m-3 " href="#" onclick="addToCartbtn()">Add to cart</i></button>       
+    </div>
+     
+</section>
+<section class="s1">
+    <a href="#" class="addToWishlist" onclick="addToWishlistbtn()"><i class="far fa-heart  appear1 "></i></a>
+    <div class="q1">
+       <img  class="ItemsImg zine elementImg" src="https://www.ikea.com/sa/en/images/products/micke-desk-white__0736020_PE740347_S5.JPG?f=xl" alt="whiteTable">
+       <a href="#"> <img class="ItemsImg zhide" src="https://www.ikea.com/sa/en/images/products/micke-desk-white__0851288_PE565258_S5.JPG?f=xxs" alt="whiteTable"></a>
+       
+       
+    </div>
+    <div class="data">
+        <h4 class="elementName"><a href="#" class="types t1">MICKE 3</a></h4>
+        <p class="elementDes">Desk, 142x50 cm</p>
+        <h3 class="elementPrice">445 SR</h3>
+        <p>More variants</p>
+        
+        <a href="#"><img class="Other" src="https://www.ikea.com/sa/en/images/products/micke-desk-black-brown__0736019_PE740346_S5.JPG?f=xu"></a>
+
+        <button class="addToCart btn btn-outline-info m-3 " href="#" onclick="addToCartbtn()">Add to cart</i></button>    </div>
+    
+</section>
+<section class="s2">
+
+    <div class="q2">
+       <a href="#"> <img  class="ItemsImg" src="https://www.ikea.com/images/a-computer-monitor-on-a-desk-with-notepads-files-and-a-lamp-dcd448645638f1bd6b8cbfac0eba0856.jpg?f=xxxl" alt="whiteTable"></a>
+       
+       
+       
+    </div>
+    <div class="data2">
+        
+        <p>Content</p>
+        <h3>Home Visit: a space-smart children's desk</h3>
+        
+        
+
+       
+    </div>
+
+</section>
+<hr class="hr place">
+<!--Items, Second Line-->
+<section class="s1 place">
+    <a href="#" class="addToWishlist" onclick="addToWishlistbtn()"><i class="far fa-heart  appear1 "></i></a>
+    <div class="q1">
+        <img  class="ItemsImg zine elementImg" src="https://www.ikea.com/sa/en/images/products/brusali-desk-brown__0735969_PE740303_S5.JPG?f=xl" alt="whiteTable">
+       <a href="#"> <img class="ItemsImg zhide" src="https://www.ikea.com/sa/en/images/products/brusali-desk-brown__0386478_PE594417_S5.JPG?f=xl" alt="whiteTable"></a>
+       
+       
+    </div>
+    <div class="data">
+        <h4 class="elementName"><a href="#" class="types t1">BRUSALI</a></h4>
+        <p class="elementDes">Desk, 90x52 cm</p>
+        <h3 class="elementPrice">345 SR</h3>
+        <p>More variants</p>
+        
+        <button class="addToCart btn btn-outline-info m-3 " href="#" onclick="addToCartbtn()">Add to cart</i></button>
+
+       
+    </div>
+</section>
+<section class="s1">
+    <a href="#" class="addToWishlist" onclick="addToWishlistbtn()"><i class="far fa-heart  appear1 "></i></a>
+    <div class="q1">
+        <img  class="ItemsImg zine elementImg" src="https://www.ikea.com/sa/en/images/products/thyge-desk-white-silver-colour__0351210_PE538415_S5.JPG?f=xl" alt="whiteTable">
+       <a href="#"> <img class="ItemsImg zhide" src="https://www.ikea.com/sa/en/images/products/thyge-desk-white-silver-colour__0853761_PE546389_S5.JPG?f=xl" alt="whiteTable"></a>
+       
+       
+    </div>
+    <div class="data">
+        <h4 class="elementName"><a href="#" class="types t1">THYGE</a></h4>
+        <p class="elementDes">Desk, 160x80 cm</p>
+        <h3 class="elementPrice">545 SR</h3>
+        <p>More variants</p>
+        
+        
+        <button class="addToCart btn btn-outline-info m-3 " href="#" onclick="addToCartbtn()">Add to cart</i></button>
+    </div>
+</section>
+<section class="s1">
+    <a href="#" class="addToWishlist" onclick="addToWishlistbtn()"><i class="far fa-heart  appear1 "></i></a>
+    <div class="q1">
+       <img  class="ItemsImg zine elementImg" src="https://www.ikea.com/sa/en/images/products/lillasen-desk-bamboo__0736017_PE740344_S5.JPG?f=xl" alt="whiteTable">
+       <a href="#"> <img class="ItemsImg zhide" src="https://www.ikea.com/pimg/0974162_ph172787_s5.jpg?f=xxs" alt="whiteTable"></a>
+       
+       
+    </div>
+    <div class="data">
+        <h4 class="elementName"><a href="#" class="types t1">LILLÅSEN</a></h4>
+        <p class="elementDes">Desk, 102x49 cm</p>
+        <h3 class="elementPrice">695 SR</h3>
+        <p>More variants</p>
+        
+        <button class="addToCart btn btn-outline-info m-3 " href="#" onclick="addToCartbtn()">Add to cart</i></button>
+
+       
+    </div>
+</section>
+<section class="s1">
+    <a href="#" class="addToWishlist" onclick="addToWishlistbtn()"><i class="far fa-heart  appear1 "></i></a>
+    <div class="q1">
+      <img  class="ItemsImg zine elementImg elementImg" src="https://www.ikea.com/sa/en/images/products/pahl-desk-with-shelf-unit-white-blue__0735922_PE740279_S5.JPG?f=xl" alt="whiteTable">
+       <a href="#"> <img class="ItemsImg zhide" src="https://www.ikea.com/sa/en/images/products/pahl-desk-with-shelf-unit-white-blue__0879063_PE646912_S5.JPG?f=xxs" alt="whiteTable"></a>
+       
+       
+    </div>
+    <div class="data">
+        <h4 class="elementName"><a href="#" class="types t1">PÅHL</a></h4>
+        <p class="elementDes">Desk, 128x58 cm</p>
+        <h3 class="elementPrice">445 SR</h3>
+        <p>More variants</p>
+        
+       
+        <button class="addToCart btn btn-outline-info m-3 " href="#" onclick="addToCartbtn()">Add to cart</i></button>       
+    </div>
+     
+</section>
+<hr class="hr place">
+
+
+
+<!--Footer-->
+
+
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <p>This is IKEA</p>
+            <a href="">About IKEA</a>
+            <a href="">Democratic Design</a>
+            <a href="">Sustainable everyday</a>
+            <a href="">Community engagement</a>
+            <a href="">Working at IKEA</a>
+        </div>
+    
+        <div class="footer-column">
+            <p>Customer service</p>
+            <a href="">About services</a>
+            <a href="">About shopping</a>
+            <a href="">Return policy</a>
+            <a href="">Contact us</a>
+            <a href="">Recalls</a>
+            <a href="">FAQ</a>
+        </div>
+    
+        <div class="footer-column">
+            <p>Useful links</p>
+            <a href="">Product guides</a>
+            <a href="">IKEA Business</a>
+            <a href="">IKEA Catalogue and brochures</a>
+            <a href="">Planning tools</a>
+            <a href="">IKEA Restaurant</a>
+            <a href="">IKEA Stores</a>
+            <a href="">Mobile app</a>
+    
+        </div>
+    
+        <div class="footer-column">
+            <p>General Information</p>
+            <a href="">Privacy policy</a>
+            <a href="">Cookies policy</a>
+            <a href="">Newsroom</a>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <div class="social-media-icons">
+        <a href=""><img src="img/facebook-icon.svg" alt="Facebook icon"></a>
+        <a href=""><img src="img/instagram-icon.svg" alt="Facebook icon"></a>
+        <a href=""><img src="img/linkedin-icon.svg" alt="Facebook icon"></a>
+        <a href=""><img src="img/twitter-icon.svg" alt="Facebook icon"></a>
+        <a href=""><img src="img/youtube-icon.svg" alt="Facebook icon"></a>
+    </div>
+
+    <p class="hr"></p>
+    <p id="credit">© Inter IKEA Systems B.V. 1999-2020 <br> 
+        Mockup by Ziyad Alwagdani, Mohanad Bawazir,  Turki Alsaedi</p>
+
+    <div class="links">
+        <a href="">Terms & Conditions</a>
+        <a href="">Cookie policy</a>
+        <a href="">Privacy Policy</a>
+    </div>
+
+</div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+
+
+</html>

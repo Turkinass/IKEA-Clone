@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyProject</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Ziyad Alwagdani">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css">
+    
+
+</head>
+<body>
+        <!--Header-->
+        <div class="banner">
+            <img id="banner-icon" src="img/banner-icon.svg" alt="Banenr Icon">
+            <a id="banner-text" href="">Kitchen online appointment booking</a>
+        </div>    
+    
+        <header class="nav1header">
+            <div class="menu-nav1-container">
+                
+                <div class="nav1-container">
+    
+                  <a href="index.html"><img class="" src="img/logo.svg" alt="IKEA Logo"></a>
+    
+                    <div class="nav1">
+                        <ul>
+                            <li><a href="index.html">Products</a></li>
+                            <li><a id="rooms" href="">Rooms</a></li>
+                        </ul>
+                    </div>
+    
+    
+                    <div class="search-container">
+                      <input id="myInput" onclick="search()" placeholder="What are you looking for?" type="text" class="search">
+                      <button id="searchbtn" type="button" onclick="getInputValue();">Get Value</button>
+                      <script src="search.js"></script>                      </div>
+    
+                      <div class="icons-nav1">
+                        <a href=""><img src="img/user-icon.svg" alt="User Icon"></a>
+                        <a href=""><img src="img/wishlist-icon.svg" alt="Wish list Icon"></a>
+                        <a href=""><img class="bag" src="img/shopping-bag-icon.svg" alt="Shopping bag Icon"></a>
+                        <a href="#" class="black-text logged-in" id="logout" >Logout</a>
+                      </div>
+    
+                </div>
+    
+                
+    
+    
+            </div>
+    <section class="place">
+<div class="leftHalf">
+    <h1 class="bigText">Login to your IKEA account</h1>
+    <p class="logParag">Login or join IKEA today to take advantage of a more personal experience!</p>
+    <button id="CreateAccount" ><a href="signUp.html" class="types">Create account</a></button>
+</div>
+
+<div id="modal-login" class="rightHalf logged-out">
+  
+        <div class="modal-content"> 
+    <form id="login-form">
+        <div class="input-field">
+          <input type="email" id="login-email" required />
+          <label for="login-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" required />
+          <label for="login-password">Your password</label>
+        </div>
+        <button class="btn blue darken-2 z-depth-0" style="border-radius: 35px;width:100px;" >Login</button>
+      </form>
+      
+      </div>
+      
+</div>
+</section>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+
+ <script>
+    var firebaseConfig = {
+   apiKey: "AIzaSyD9fC1yAgCTtOJAAqWOLVYn8U47v1X4-1c",
+   authDomain: "swe363-project-ce0ca.firebaseapp.com",
+   projectId: "swe363-project-ce0ca",
+   storageBucket: "swe363-project-ce0ca.appspot.com",
+   messagingSenderId: "893692700102",
+   appId: "1:893692700102:web:b7228c5d07305f7e8e3ec7",
+   measurementId: "G-LHHTMCM1SC"
+ };
+ 
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+  
+    // make auth and firestore references
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+ 
+    // update firestore settings
+    db.settings({ timestampsInSnapshots: true });
+  
+ </script> 
+ 
+<script src="JS/auth.js"></script>
+<script src="JS/index.js"></script>
+
+
+</body>
+</html>

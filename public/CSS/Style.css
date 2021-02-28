@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/*------------------SearchPage------------------*/
+
+
+
+.place{
+    
+    margin-left: 10%;
+   
+}
+
+#TheWord{
+    font-size: 40px;
+    display: inline;
+    color: black;
+}
+.t1{
+  font-size: 15px;
+  padding: 5px;
+}
+
+.table1{
+    width: auto;
+    margin-left: 80%;
+    
+ }
+ .fixed{
+     width: 87%;
+     margin-top: 5%;
+    position: sticky;
+     border-bottom: solid rgb(233, 230, 230);
+
+ }
+.t2{
+    padding: 10px 20px;
+    background-color: rgb(241, 238, 238);
+    border-radius: 20px;
+    transition: 0.5s background-color;
+}
+.table2{
+    margin-bottom: 1%;
+}
+.types{
+
+    text-decoration: none;
+    color: black;
+}
+.t2:hover{
+    
+    background-color: rgb(187, 186, 186);
+   
+    
+}
+.t1:hover{
+   text-decoration: underline;
+}
+hr{
+    width: 90%;
+    margin-top: 6%;
+    background-color:rgb(168, 13, 13);
+}
+.s1{
+    width: 20%;
+    height: 460px;
+    display: inline-block;
+    padding: 10px;
+}
+.s2{
+    width: 20%;
+    height: 460px;
+    position: absolute;
+    display: inline-block;
+   margin-top: 1%;
+    background-color: rgb(241, 239, 239);
+}
+.q1{
+
+width: 100%;
+height: 300px;
+position: relative;
+}
+.q2{
+    width: 100%;
+    height: 350px;
+
+}
+.ItemsImg{
+  
+    
+    width: 100%;
+    height: 100%;
+   
+}
+.zine{
+    z-index: 1;
+    position: absolute;
+  
+}
+.zhide{
+    z-index: 0;
+    position: absolute;
+    
+}
+.data{
+   margin-top: 4%;
+    padding-top: 10px;
+}
+.data2{
+margin: 3%;
+padding: 5%;
+}
+h4{
+    padding: 3px;
+}
+p{
+    padding: 4px;
+    color: rgb(192, 191, 191);
+}
+.Other{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-top: 1%;
+    padding: 2px;
+}
+.Other:hover{
+    border: black solid 2px;
+}
+.appear1{
+    margin-left: 90%;
+   color: black;
+   
+}
+.appear2{
+    display: inline-block;
+   color: black;
+    margin-left: 80%;
+    
+}
+ .s1 :hover .zine {
+    display: none;
+    
+}
+.appear2:hover{
+    color: brown;
+    
+}
+.appear1:hover{
+    color: brown;
+    
+}
+/*------------------LogIn------------------*/
+.leftHalf{
+    text-align: left;
+    margin-left: -5%;
+    margin-top:10% ;
+    width: 40%;
+    display: inline-block;
+
+    
+
+}
+.bigText{
+    font-size: 3rem;
+    padding: 0.5%;
+  
+}
+.logParag{
+
+    padding: 3%;
+    color: grey;
+}
+#CreateAccount{
+    margin: 4%;
+    padding: 20px 72px;
+    font-size: 16px;
+    color: #111111;
+    border-radius: 35px;
+    border-color: rgb(255, 255, 255);
+    box-shadow: none;
+    opacity: 60%;
+   
+    border:transparent;
+    
+}
+#CreateAccount:hover{
+    background-color: rgb(197, 195, 195);
+}
+.rightHalf{
+    width: 40%;
+    text-align: right;
+    display: inline-block;
+    margin-left:15% ;
+    margin-top:10%;
+    
+
+}
+#LogIn{
+    text-align: left;
+}
+#username{
+    font-size: 1rem;
+    margin-top: 2%;
+    padding: 5% 40%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+   
+
+}
+#password{
+    font-size: 1rem;
+    margin-top: 10%;
+    padding: 5% 40%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 5%;
+    
+
+   
+}
+.forgot{
+    
+    color: rgb(99, 98, 98);
+
+}
+.forgot:hover{
+    color: black;
+}
+#loginBtn{
+    display: block;
+padding: 3% 50%;
+background-color: black;
+margin-left: 5%;
+margin-top: 7%;
+border-radius: 35px;
+}
+.colorme{
+    color: white;
+    font-size: 1rem;
+}
+#loginBtn:hover{
+    background-color: rgb(73, 73, 73);
+}
+/*Turki*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+  body {
+    margin: 0;
+    font-family: 'Noto Sans';
+  }
+
+  .footer{
+    background-color: #F5F5F5;
+    padding: 5rem 2.5rem 2.5rem 7.25rem;
+  }
+
+  .footer-container{
+    display: flex;
+    justify-content: space-between;    
+    margin-bottom: 70px;
+  }
+  .footer-column{
+    color: #111111;
+    font-size: .875rem;
+    padding-left: 1.25rem;
+    width: 15rem;
+  }
+  
+  .footer-column p{
+    color: #111111;
+    font-weight: 700;
+    line-height: 1.875rem;
+    margin: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .footer-column a{
+    color: #484848;
+    text-decoration: none;
+    display: block;
+    margin-bottom: .8rem;
+  }
+
+  .footer-column a:hover{
+    color: #111111;
+    text-decoration: underline;
+  }
+
+  .social-media-icons a img{
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #DFDFDF;
+    border-radius: 100%;
+  }
+
+  .social-media-icons a img:hover{
+    border-color: #929292;
+  }
+
+  .hr{
+    margin-top: 25px;
+    border-top: 1px solid #DFDFDF;
+  }
+
+  #credit{
+    color: #484848;
+    margin: 0;
+    margin-top: 25px;
+    font-size: 12px;
+  }
+
+  .links{
+    text-align: right;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .links a{
+    color: #484848;
+    margin-left: 18px;
+    text-decoration: none;
+  }
+
+  .links a:hover{
+    text-decoration: underline;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+  body {
+    font-family: 'Noto Sans';
+    margin: 0;
+  }
+
+  .banner{
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    }
+
+  #banner-text{
+    margin-bottom: 2px;
+    color: white;
+    font-size: 0.75rem;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 62px; 
+  }
+  #banner-text:hover{
+    text-decoration: underline;
+  }
+
+  #banner-icon{
+    margin-bottom: 2px;
+    height: 18px;
+    width: 18px;
+    margin-right: 10.5px;
+  }
+
+ /* ---- end of banner ---- */
+
+  a {
+    text-decoration: none;
+    color: #111111;
+}
+
+header{
+  max-width: 112rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+  .menu-nav-container{
+    display: grid;
+    grid-column-gap: 1.25rem;
+    grid-template-columns: repeat(13, minmax(0, 1fr));
+    grid-template-areas: 
+    "menu nav nav nav nav nav nav nav nav nav nav nav nav";
+    padding-left: 1.20rem;
+    padding-right: 1.85rem;
+  }
+
+  .nav-container{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-container .logo{
+    width: 90px;
+    height: 36px;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .nav-container nav{
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 2.95rem;
+    white-space: nowrap;
+  }
+
+  .nav-container nav ul{
+    padding: 0;
+    margin: 0 0 2px 0;
+  }
+
+  .nav-container nav li{
+    list-style-type: none;
+    display: inline-block; /* avoid bullet style */
+    margin-right: 26px;
+  }
+
+  .nav-container nav li:hover{
+    text-decoration: underline;
+  }
+
+      /* ---------------------- search below --------------------------------- */
+
+.search-container {
+  width: 100%;
+}
+  
+  .search {
+	font-family: 'Noto Sans';
+	font-size: 16px;
+	border: 2px solid transparent;
+	box-sizing: border-box;
+	border-radius: 50em;
+	width: 100%;
+	height: 54px;
+  padding: .8125rem 3.375rem .8125rem 3.6rem;
+  margin-left: 21px;
+	outline: 0;
+	background-color: #f5f5f5;
+	background-image: url(img/search-icon.svg);
+	background-repeat: no-repeat;
+	background-position-y: 50%;
+	background-position-x: 1.4rem;
+  }
+  
+  .search:hover {
+	background-color: #E2E2E2;
+	transition-duration: 0.2s;
+  }
+
+  .search:focus{
+	border: 2px solid #1F599E;
+	background-color: white;
+	background-image: url(img/close-icon.svg);
+	transition-duration: 0s;
+  }
+
+  /* ---------------------- nav below --------------------------------- */
+  
+nav.icons-nav{
+  padding-top: 4px;
+  margin-left: 126px;
+  display: flex;
+
+}
+
+.icons-nav img{
+	background-color: transparent;
+	border-radius: 100%;		
+	padding: 8px;
+  margin-left: 8px;
+  box-sizing: content-box;
+}
+
+.icons-nav img:hover{
+	background-color: #F5F5F5;
+	transition-duration: 0.1s;
+}
+.navheader{
+  display: inline;
+}
+
+#searchbtn{
+  display: none;
+}

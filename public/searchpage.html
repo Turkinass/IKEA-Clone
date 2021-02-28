@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="pagetitle"></title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Ziyad Alwagdani">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="banner">
+        <img id="banner-icon" src="img/banner-icon.svg" alt="Banenr Icon">
+        <a id="banner-text" href="">Kitchen online appointment booking</a>
+    </div>    
+
+    <header>
+        <div class="menu-nav-container">
+            
+            <div class="nav-container">
+
+                <a href="index.html"><img class="logo" src="img/logo.svg" alt="IKEA Logo"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="">Products</a></li>
+                        <li><a id="rooms" href="">Rooms</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="search-container">
+                    <input id="myInput" onclick="search()" placeholder="What are you looking for?" type="text" class="search">
+                    <button id="searchbtn" type="button" onclick="getInputValue();">Get Value</button>
+                    <script src="search.js"></script>                </div>
+
+                <nav class="icons-nav">
+                    <a href=""><img src="img/user-icon.svg" alt="User Icon"></a>
+                    <a href=""><img src="img/wishlist-icon.svg" alt="Wish list Icon"></a>
+                    <a href=""><img class="bag" src="img/shopping-bag-icon.svg" alt="Shopping bag Icon"></a>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    
+
+    <!--Search Information-->
+    <div class="page-body">
+
+        <div class="search-page-header">
+            <div class="search-title-container">
+                <p class="search-title">Showing matches for <strong>"<span id="query"></span>"</strong></p>
+            </div>
+            <div class="search-stat">
+                <a id="first" href="" class="types"><strong>Products </strong><span id="itemsNumber"></span> </a>
+                <a href="" class="types"><strong>Content </strong> </a>
+            </div>
+        </div>
+
+        
+
+        <div class="filter-buttons">
+            <a href="#" class="types">Sort</a>
+            <a href="#" class="types">Size</a>
+            <a href="#" class="types">Price</a>
+            <a href="#" class="types">Color</a>
+            <a href="#" class="types">Category</a>
+            <a href="#" class="types">Buyable online</a>
+            <a href="#" class="types">Special price</a>
+            <a href="#" class="types">New products</a>
+            <a href="#" class="types">Matirlas</a>
+            <a href="#" class="types">More filters</a>
+        </div>
+
+        <div id="items-container">
+            <!-- app.js works here -->
+        </div>     
+    </div>
+
+
+
+    <br><br><br><br><br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <p>This is IKEA</p>
+                <a href="">About IKEA</a>
+                <a href="">Democratic Design</a>
+                <a href="">Sustainable everyday</a>
+                <a href="">Community engagement</a>
+                <a href="">Working at IKEA</a>
+            </div>
+        
+            <div class="footer-column">
+                <p>Customer service</p>
+                <a href="">About services</a>
+                <a href="">About shopping</a>
+                <a href="">Return policy</a>
+                <a href="">Contact us</a>
+                <a href="">Recalls</a>
+                <a href="">FAQ</a>
+            </div>
+        
+            <div class="footer-column">
+                <p>Useful links</p>
+                <a href="">Product guides</a>
+                <a href="">IKEA Business</a>
+                <a href="">IKEA Catalogue and brochures</a>
+                <a href="">Planning tools</a>
+                <a href="">IKEA Restaurant</a>
+                <a href="">IKEA Stores</a>
+                <a href="">Mobile app</a>
+        
+            </div>
+        
+            <div class="footer-column">
+                <p>General Information</p>
+                <a href="">Privacy policy</a>
+                <a href="">Cookies policy</a>
+                <a href="">Newsroom</a>
+            </div>
+        </div>
+
+        <div class="social-media-icons">
+            <a href=""><img src="img/facebook-icon.svg" alt="Facebook icon"></a>
+            <a href=""><img src="img/instagram-icon.svg" alt="Facebook icon"></a>
+            <a href=""><img src="img/linkedin-icon.svg" alt="Facebook icon"></a>
+            <a href=""><img src="img/twitter-icon.svg" alt="Facebook icon"></a>
+            <a href=""><img src="img/youtube-icon.svg" alt="Facebook icon"></a>
+        </div>
+
+        <p class="hr"></p>
+        <p id="credit">© Inter IKEA Systems B.V. 1999-2020 <br> 
+            Mockup by Ziyad Alwagdani, Mohanad Bawazir,  Turki Alsaedi</p>
+
+        <div class="links">
+            <a href="">Terms & Conditions</a>
+            <a href="">Cookie policy</a>
+            <a href="">Privacy Policy</a>
+        </div>
+
+    </footer>
+
+
+ <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+ <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+
+ <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+ <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+
+ <!-- Add Firebase products that you want to use -->
+ <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+ 
+ <script>
+    // TODO: Replace the following with your app's Firebase project configuration
+    // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
+    const firebaseConfig = {
+        apiKey: "AIzaSyD9fC1yAgCTtOJAAqWOLVYn8U47v1X4-1c",
+        authDomain: "swe363-project-ce0ca.firebaseapp.com",
+        projectId: "swe363-project-ce0ca",
+        storageBucket: "swe363-project-ce0ca.appspot.com",
+        messagingSenderId: "893692700102",
+        appId: "1:893692700102:web:b7228c5d07305f7e8e3ec7",
+        measurementId: "G-LHHTMCM1SC"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshots: true }); 
+  </script>
+  
+  <script src="app.js"></script>
+
+</body>
+
+
+
+
+
+</html>

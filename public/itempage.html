@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="itempage.css" type="text/css">
+    <title id="pagetitle"></title>
+    <meta name="description" content="Decorate your home with a variety of quality modern & contemporary furniture for living room, bedroom, dining room, outdoor at IKEA Saudi Arabia.">
+    <meta name="keywords" content="IKEA, furniture, Saudi Arabia, KSA ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="IKEA">
+    <meta name="image" content="https://www.ikea.com/images/ec/cc/ecccf8376b6f022bb39121b1de1a78d0.jpg">
+
+</head>
+
+<body>
+
+
+    <div class="banner">
+        <img id="banner-icon" src="img/banner-icon.svg" alt="Banenr Icon">
+        <a id="banner-text" href="">Kitchen online appointment booking</a>
+    </div>
+
+    <header>
+        <div class="menu-nav-container">
+
+            <div class="nav-container">
+
+                <a href="index.html"><img class="logo" src="img/logo.svg" alt="IKEA Logo"></a>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Products</a></li>
+                        <li><a id="rooms" href="">Rooms</a></li>
+                    </ul>
+                </nav>
+
+
+                <div class="search-container">
+                    <input id="myInput" onclick="search()" placeholder="What are you looking for?" type="text" class="search">
+                    <button id="searchbtn" type="button" onclick="getInputValue();">Get Value</button>
+                    <script src="search.js"></script>                </div>
+
+                <nav class="icons-nav">
+                    <a href="LogIn.html"><img src="img/user-icon.svg" alt="User Icon"></a>
+                    <a href=""><img src="img/wishlist-icon.svg" alt="Wish list Icon"></a>
+                    <a href=""><img class="bag" src="img/shopping-bag-icon.svg" alt="Shopping bag Icon"></a>
+                </nav>
+
+
+
+            </div>
+
+
+
+
+        </div>
+    </header>
+
+
+
+    <br>
+    <div class="container">
+
+        <section id="product-illustrate">
+
+            <section id="product-details">
+
+                <div id="product-label">
+
+                    <div id="product-name">
+                        <h2 id="itemnam"></h2>
+                        <p id="itemdsc"></p>
+                        <p id="itemdsc2">Price incl. VAT</p>
+                    </div>
+                    <div id="product-price-wrapper">
+                        <p class="search-result-currency">SR</p>
+                        <p id="search-result-price"></p>
+                    </div>
+
+                </div>
+                <div id="bag-button">
+                    <div>
+                        <button id="addtobag" type="button"><span id=add-to-bag-text>Add to bag</span></button>
+                    </div>
+                    <button id="wishlist-button" type="button"><img src="img/wishlist-icon.svg"
+                            alt="Wish list Icon"></button>
+
+                </div>
+                <div id=available-section>
+                    <div class="manu-sec">
+                        <div class=placeholder><span class="manu-sec-imag"><svg focusable="false" viewBox="0 0 24 24"
+                                    class="menu-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1 4H16V7.00001L19.0246 7L23.0039 12.6848V18H20.3472C19.9254 19.3056 18.6999 20.25 17.2539 20.25C15.8079 20.25 14.5824 19.3056 14.1607 18H10.2563C9.83456 19.3056 8.60911 20.25 7.16309 20.25C5.71707 20.25 4.49161 19.3056 4.06984 18H1V4ZM4.06984 16C4.49161 14.6944 5.71707 13.75 7.16309 13.75C8.60911 13.75 9.83456 14.6944 10.2563 16H14V6H3V16H4.06984ZM16 14.0007C16.3858 13.8392 16.8095 13.75 17.2539 13.75C18.6999 13.75 19.9254 14.6944 20.3472 16H21.0039V13.3152L17.9833 9L16 9.00001V14.0007ZM7.16309 15.75C6.47273 15.75 5.91309 16.3096 5.91309 17C5.91309 17.6904 6.47273 18.25 7.16309 18.25C7.85344 18.25 8.41309 17.6904 8.41309 17C8.41309 16.3096 7.85344 15.75 7.16309 15.75ZM17.2539 15.75C16.5635 15.75 16.0039 16.3096 16.0039 17C16.0039 17.6904 16.5635 18.25 17.2539 18.25C17.9443 18.25 18.5039 17.6904 18.5039 17C18.5039 16.3096 17.9443 15.75 17.2539 15.75Z">
+                                    </path>
+                                </svg></span>Can be ordered with delivery</span><span class="availablity-status"></span>
+                        </div>
+                    </div>
+                    <div class="manu-sec">
+                        <div class=placeholder><span class="manu-sec-imag"><svg focusable="false" viewBox="0 0 24 24"
+                                    class="menu-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22 20V4H2V20H22ZM20 6H4V18H7V10H17V18H20V6ZM11 12H9V18H11V12ZM13 18H15V12H13V18Z">
+                                    </path>
+                                </svg></span><a id=wherhouse-manu-link href="#">Check in-store stock</a></div>
+                    </div>
+                </div>
+
+
+
+
+            </section>
+
+
+        </section>
+
+
+
+        <section id="product-manufactures">
+
+            <div id="photo-section">
+                <img id="item-photo1" src="" alt="">
+                <img id="item-photo2" src="" alt="">
+
+            </div>
+
+            <div id="product-description">
+                <p id="itemdsc"> <br>We are confident in the quality of our products and many items are covered by guarantees and warranties. Below you will find a list of all our guarantees. <br> <br> Our guarantees start on the day of purchase. When making a claim you will need the original purchase receipt as proof of purchase. <br> <br>
+
+                </p>
+                <span class=product-serial-number>703.584.92</span>
+            </div>
+            <div class="details-buttons">
+                <button class="detail-button" type="button"><span class=button-range><span>Product details</span></span>
+                    <svg focusable="false" viewBox="0 0 24 24" fill="#0000000" class="small-arrow-wrapper"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.5996 11.9999L9.81456 17.7857L8.40026 16.3716L12.7714 11.9999L8.40026 7.62823L9.81457 6.21411L15.5996 11.9999Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="details-buttons">
+                <button class="detail-button" type="button"><span class=button-range><span>Product size</span></span>
+                    <svg focusable="false" viewBox="0 0 24 24" fill="#000000" class="small-arrow-wrapper"
+                        aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M15.5996 11.9999L9.81456 17.7857L8.40026 16.3716L12.7714 11.9999L8.40026 7.62823L9.81457 6.21411L15.5996 11.9999Z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <h1 class="scroll-menu2-title">Similar products</h1>
+            <div class="scroll-menu2">
+                <div class="scroll-menu2-item">
+                    <div class="scroll-menu2-item">
+                        <div class="search-result">
+                            <a href="#"><i class="far fa-heart  appear1"></i></a>
+                            <button class="item-card-wishlist" type="button">
+                                <svg focusable="false" viewBox="0 0 24 24" class="heart-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.336 5.52055C14.2336 3.62376 17.3096 3.62401 19.2069 5.52129C20.2067 6.52115 20.6796 7.85005 20.6259 9.15761C20.6151 12.2138 18.4184 14.8654 16.4892 16.6366C15.4926 17.5517 14.5004 18.2923 13.7593 18.8036C13.3879 19.0598 13.0771 19.2601 12.8574 19.3973C12.7475 19.466 12.6601 19.519 12.5992 19.5555C12.5687 19.5737 12.5448 19.5879 12.5279 19.5978L12.5079 19.6094L12.502 19.6129L12.5001 19.614C12.5001 19.614 12.4989 19.6147 11.9999 18.748C11.501 19.6147 11.5005 19.6144 11.5005 19.6144L11.4979 19.6129L11.4919 19.6094L11.472 19.5978C11.4551 19.5879 11.4312 19.5737 11.4007 19.5555C11.3397 19.519 11.2524 19.466 11.1425 19.3973C10.9227 19.2601 10.612 19.0598 10.2405 18.8036C9.49947 18.2923 8.50726 17.5517 7.51063 16.6366C5.58146 14.8654 3.38477 12.2139 3.37399 9.15765C3.32024 7.85008 3.79314 6.52117 4.79301 5.52129C6.69054 3.62376 9.76704 3.62376 11.6646 5.52129L11.9993 5.856L12.3353 5.52129L12.336 5.52055ZM11.9999 18.748L11.5005 19.6144L11.9999 19.9019L12.4989 19.6147L11.9999 18.748ZM11.9999 17.573C12.1727 17.462 12.384 17.3226 12.6236 17.1573C13.3125 16.6821 14.2267 15.9988 15.1366 15.1634C17.0157 13.4381 18.6259 11.2919 18.6259 9.13506V9.11213L18.627 9.08922C18.6626 8.31221 18.3844 7.52727 17.7926 6.9355C16.6762 5.81903 14.866 5.81902 13.7495 6.9355L13.7481 6.93689L11.9965 8.68166L10.2504 6.9355C9.13387 5.81903 7.3237 5.81903 6.20722 6.9355C5.61546 7.52727 5.33724 8.31221 5.3729 9.08922L5.37395 9.11213V9.13507C5.37395 11.2919 6.98418 13.4381 8.86325 15.1634C9.77312 15.9988 10.6874 16.6821 11.3762 17.1573C11.6159 17.3226 11.8271 17.462 11.9999 17.573Z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <div class="search-result-image">
+                                <a href="#"> <img class="ItemsImg zine" src="img/tertial-work-lamp-white2.webp"
+                                        alt="white-lamp"></a>
+                                <a href="#"> <img class="ItemsImg zhide" src="img/tertial-work-lamp-white.webp"
+                                        alt="white-lamp"></a>
+                            </div>
+                            <div class="search-result-data">
+                                <a href="#" class="search-result-name">TERTIAL</a>
+                                <p class="search-result-type">Work lamp</p>
+                                <p class="search-result-currency">SR</p>
+                                <p id="search-result-price">235<button type="button" class="cart-button"
+                                        aria-label="Add to bag"><span class="cart-icon-continer">
+                                            <svg focusable="false" width="25" fill="#ffffff" viewBox="0 0 24 24" class="cart-icon" aria-hidden="true">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10.4372 4H10.9993H12.0003H12.9996H13.5616L13.8538 4.48014L17.2112 9.99713H21H22.2806L21.9702 11.2396L21.5303 13H19.4688L19.7194 11.9971H4.28079L5.59143 17.2397C5.70272 17.6848 6.1027 17.9971 6.56157 17.9971H15V19.9971H6.56157C5.18496 19.9971 3.98502 19.0602 3.65114 17.7247L2.02987 11.2397L1.71924 9.99713H3.00002H6.78793L10.145 4.48017L10.4372 4ZM12.4375 6L14.87 9.99713H9.12911L11.5614 6H12.0003H12.4375ZM17.9961 16V14H19.9961V16H21.9961V18H19.9961V20H17.9961V18H15.9961V16H17.9961Z">
+                                                </path>
+                                            </svg></span></button></p>
+                                <p class="more-variants"></p>
+                            </div>
+                            <a href="#"><i class="fas fa-cart-plus fa-2x cart-icon"></i></a>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="scroll-menu2-item">
+                    <div class="scroll-menu2-item">
+                        <div class="search-result">
+                            <a href="#"><i class="far fa-heart  appear1"></i></a>
+                            <button class="item-card-wishlist" type="button">
+                                <svg focusable="false" width="25" fill="#ffffff" viewBox="0 0 24 24" class="cart-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.4372 4H10.9993H12.0003H12.9996H13.5616L13.8538 4.48014L17.2112 9.99713H21H22.2806L21.9702 11.2396L21.5303 13H19.4688L19.7194 11.9971H4.28079L5.59143 17.2397C5.70272 17.6848 6.1027 17.9971 6.56157 17.9971H15V19.9971H6.56157C5.18496 19.9971 3.98502 19.0602 3.65114 17.7247L2.02987 11.2397L1.71924 9.99713H3.00002H6.78793L10.145 4.48017L10.4372 4ZM12.4375 6L14.87 9.99713H9.12911L11.5614 6H12.0003H12.4375ZM17.9961 16V14H19.9961V16H21.9961V18H19.9961V20H17.9961V18H15.9961V16H17.9961Z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <div class="search-result-image">
+                                <a href="#"> <img class="ItemsImg zine" src="img/kvart-work-lamp-black3.webp"
+                                        alt="grey-lamp"></a>
+                                <a href="#"> <img class="ItemsImg zhide"
+                                        src="img/kvart-work-lamp-black__0880538_PE614074_S5.webp" alt="grey-lamp"></a>
+                            </div>
+                            <div class="search-result-data">
+                                <a href="#" class="search-result-name">KVART</a>
+                                <p class="search-result-type">Work lamp</p>
+                                <p class="search-result-currency">SR</p>
+                                <p id="search-result-price">395<button type="button" class="cart-button"
+                                        aria-label="Add to bag"><span class="cart-icon-continer"><svg focusable="false" width="25" fill="#ffffff" viewBox="0 0 24 24" class="cart-icon" aria-hidden="true">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10.4372 4H10.9993H12.0003H12.9996H13.5616L13.8538 4.48014L17.2112 9.99713H21H22.2806L21.9702 11.2396L21.5303 13H19.4688L19.7194 11.9971H4.28079L5.59143 17.2397C5.70272 17.6848 6.1027 17.9971 6.56157 17.9971H15V19.9971H6.56157C5.18496 19.9971 3.98502 19.0602 3.65114 17.7247L2.02987 11.2397L1.71924 9.99713H3.00002H6.78793L10.145 4.48017L10.4372 4ZM12.4375 6L14.87 9.99713H9.12911L11.5614 6H12.0003H12.4375ZM17.9961 16V14H19.9961V16H21.9961V18H19.9961V20H17.9961V18H15.9961V16H17.9961Z">
+                                            </path>
+                                        </svg></span></button></p>
+                                <p class="more-variants"></p>
+                            </div>
+                            <a href="#"><i class="fas fa-cart-plus fa-2x cart-icon"></i></a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="scroll-menu2-item">
+                    <div class="scroll-menu2-item">
+                        <div class="search-result">
+                            <a href="#"><i class="far fa-heart  appear1"></i></a>
+                            <button class="item-card-wishlist" type="button">
+                                <svg focusable="false" width="25" fill="#ffffff" viewBox="0 0 24 24" class="cart-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10.4372 4H10.9993H12.0003H12.9996H13.5616L13.8538 4.48014L17.2112 9.99713H21H22.2806L21.9702 11.2396L21.5303 13H19.4688L19.7194 11.9971H4.28079L5.59143 17.2397C5.70272 17.6848 6.1027 17.9971 6.56157 17.9971H15V19.9971H6.56157C5.18496 19.9971 3.98502 19.0602 3.65114 17.7247L2.02987 11.2397L1.71924 9.99713H3.00002H6.78793L10.145 4.48017L10.4372 4ZM12.4375 6L14.87 9.99713H9.12911L11.5614 6H12.0003H12.4375ZM17.9961 16V14H19.9961V16H21.9961V18H19.9961V20H17.9961V18H15.9961V16H17.9961Z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <div class="search-result-image">
+                                <a href="#"> <img class="ItemsImg zine"
+                                        src="img/naevlinge-led-clamp-spotlight-dark-red1.webp" alt="red-lamp"></a>
+                                <a href="#"> <img class="ItemsImg zhide"
+                                        src="img/naevlinge-led-clamp-spotlight-dark-red.webp" alt="red-lamp"></a>
+                            </div>
+                            <div class="search-result-data">
+                                <a href="#" class="search-result-name">NAEVLINGE</a>
+                                <p class="search-result-type">LED clamp spotlight</p>
+                                <p class="search-result-currency">SR</p>
+                                <p id="search-result-price">312<button type="button" class="cart-button"
+                                        aria-label="Add to bag"><span class="cart-icon-continer"><svg focusable="false" width="25" fill="#ffffff" viewBox="0 0 24 24" class="cart-icon" aria-hidden="true">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10.4372 4H10.9993H12.0003H12.9996H13.5616L13.8538 4.48014L17.2112 9.99713H21H22.2806L21.9702 11.2396L21.5303 13H19.4688L19.7194 11.9971H4.28079L5.59143 17.2397C5.70272 17.6848 6.1027 17.9971 6.56157 17.9971H15V19.9971H6.56157C5.18496 19.9971 3.98502 19.0602 3.65114 17.7247L2.02987 11.2397L1.71924 9.99713H3.00002H6.78793L10.145 4.48017L10.4372 4ZM12.4375 6L14.87 9.99713H9.12911L11.5614 6H12.0003H12.4375ZM17.9961 16V14H19.9961V16H21.9961V18H19.9961V20H17.9961V18H15.9961V16H17.9961Z">
+                                            </path>
+                                        </svg></span></button></p>
+                                <p class="more-variants"></p>
+                            </div>
+                            <a href="#"><i class="fas fa-cart-plus fa-2x cart-icon"></i></a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="scroll-menu2-item">
+                    <div class="scroll-menu2-item">
+                        <div class="search-result">
+                            <a href="#"><i class="far fa-heart  appear1"></i></a>
+                            <button class="item-card-wishlist" type="button">
+                                <svg focusable="false" viewBox="0 0 24 24" class="heart-icon" aria-hidden="true">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.336 5.52055C14.2336 3.62376 17.3096 3.62401 19.2069 5.52129C20.2067 6.52115 20.6796 7.85005 20.6259 9.15761C20.6151 12.2138 18.4184 14.8654 16.4892 16.6366C15.4926 17.5517 14.5004 18.2923 13.7593 18.8036C13.3879 19.0598 13.0771 19.2601 12.8574 19.3973C12.7475 19.466 12.6601 19.519 12.5992 19.5555C12.5687 19.5737 12.5448 19.5879 12.5279 19.5978L12.5079 19.6094L12.502 19.6129L12.5001 19.614C12.5001 19.614 12.4989 19.6147 11.9999 18.748C11.501 19.6147 11.5005 19.6144 11.5005 19.6144L11.4979 19.6129L11.4919 19.6094L11.472 19.5978C11.4551 19.5879 11.4312 19.5737 11.4007 19.5555C11.3397 19.519 11.2524 19.466 11.1425 19.3973C10.9227 19.2601 10.612 19.0598 10.2405 18.8036C9.49947 18.2923 8.50726 17.5517 7.51063 16.6366C5.58146 14.8654 3.38477 12.2139 3.37399 9.15765C3.32024 7.85008 3.79314 6.52117 4.79301 5.52129C6.69054 3.62376 9.76704 3.62376 11.6646 5.52129L11.9993 5.856L12.3353 5.52129L12.336 5.52055ZM11.9999 18.748L11.5005 19.6144L11.9999 19.9019L12.4989 19.6147L11.9999 18.748ZM11.9999 17.573C12.1727 17.462 12.384 17.3226 12.6236 17.1573C13.3125 16.6821 14.2267 15.9988 15.1366 15.1634C17.0157 13.4381 18.6259 11.2919 18.6259 9.13506V9.11213L18.627 9.08922C18.6626 8.31221 18.3844 7.52727 17.7926 6.9355C16.6762 5.81903 14.866 5.81902 13.7495 6.9355L13.7481 6.93689L11.9965 8.68166L10.2504 6.9355C9.13387 5.81903 7.3237 5.81903 6.20722 6.9355C5.61546 7.52727 5.33724 8.31221 5.3729 9.08922L5.37395 9.11213V9.13507C5.37395 11.2919 6.98418 13.4381 8.86325 15.1634C9.77312 15.9988 10.6874 16.6821 11.3762 17.1573C11.6159 17.3226 11.8271 17.462 11.9999 17.573Z">
+                                    </path>
+                                </svg>
+                            </button>
+                            <div class="search-result-image">
+                                <a href="#"> <img class="ItemsImg zine" src="img/tertial-work-lamp-blue.webp"
+                                        alt="blue-lamb"></a>
+                                <a href="#"> <img class="ItemsImg zhide" src="img/tertial-work-lamp-blue2.webp"
+                                        alt="blue-lamb"></a>
+                            </div>
+                            <div class="search-result-data">
+                                <a href="#" class="search-result-name">TERTIAL</a>
+                                <p class="search-result-type">Work lamp</p>
+                                <p class="search-result-currency">SR</p>
+                                <p id="search-result-price">240<button type="button" class="cart-button"
+                                        aria-label="Add to bag"><span class="cart-icon-continer"><svg focusable="false" width="25" fill="#ffffff" viewBox="0 0 24 24" class="cart-icon" aria-hidden="true">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10.4372 4H10.9993H12.0003H12.9996H13.5616L13.8538 4.48014L17.2112 9.99713H21H22.2806L21.9702 11.2396L21.5303 13H19.4688L19.7194 11.9971H4.28079L5.59143 17.2397C5.70272 17.6848 6.1027 17.9971 6.56157 17.9971H15V19.9971H6.56157C5.18496 19.9971 3.98502 19.0602 3.65114 17.7247L2.02987 11.2397L1.71924 9.99713H3.00002H6.78793L10.145 4.48017L10.4372 4ZM12.4375 6L14.87 9.99713H9.12911L11.5614 6H12.0003H12.4375ZM17.9961 16V14H19.9961V16H21.9961V18H19.9961V20H17.9961V18H15.9961V16H17.9961Z">
+                                            </path>
+                                        </svg></span></button></p>
+                                <p class="more-variants"></p>
+                            </div>
+                            <a href="#"><i class="fas fa-cart-plus fa-2x cart-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-menu2-item">
+                    <div class="scroll-menu2-item">
+                        <div class="search-result">
+                            <a href="#"><i class="far fa-heart  appear1"></i></a>
+                            <button class="item-card-wishlist" type="button">
+                                <svg focusable="false" width="25" fill="#ffffff" viewBox="0 0 24 24" class="cart-icon" aria-hidden="true">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10.4372 4H10.9993H12.0003H12.9996H13.5616L13.8538 4.48014L17.2112 9.99713H21H22.2806L21.9702 11.2396L21.5303 13H19.4688L19.7194 11.9971H4.28079L5.59143 17.2397C5.70272 17.6848 6.1027 17.9971 6.56157 17.9971H15V19.9971H6.56157C5.18496 19.9971 3.98502 19.0602 3.65114 17.7247L2.02987 11.2397L1.71924 9.99713H3.00002H6.78793L10.145 4.48017L10.4372 4ZM12.4375 6L14.87 9.99713H9.12911L11.5614 6H12.0003H12.4375ZM17.9961 16V14H19.9961V16H21.9961V18H19.9961V20H17.9961V18H15.9961V16H17.9961Z">
+                                            </path>
+                                        </svg>
+                            </button>
+                            <div class="search-result-image">
+                                <a href="#"> <img class="ItemsImg zine" src="img/forsa-work-lamp-nickel-plated1.webp"
+                                        alt="forsa-lamp"></a>
+                                <a href="#"> <img class="ItemsImg zhide" src="img/forsa-work-lamp-nickel-plated.webp"
+                                        alt="forsa-lamp"></a>
+                            </div>
+                            <div class="search-result-data">
+                                <a href="#" class="search-result-name">FORSA</a>
+                                <p class="search-result-type">Work lamp</p>
+                                <p class="search-result-currency">SR</p>
+                                <p id="search-result-price">199<button type="button" class="cart-button"
+                                        aria-label="Add to bag"><span class="cart-icon-continer"><svg focusable="false" width="25" fill="#ffffff" viewBox="0 0 24 24" class="cart-icon" aria-hidden="true">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10.4372 4H10.9993H12.0003H12.9996H13.5616L13.8538 4.48014L17.2112 9.99713H21H22.2806L21.9702 11.2396L21.5303 13H19.4688L19.7194 11.9971H4.28079L5.59143 17.2397C5.70272 17.6848 6.1027 17.9971 6.56157 17.9971H15V19.9971H6.56157C5.18496 19.9971 3.98502 19.0602 3.65114 17.7247L2.02987 11.2397L1.71924 9.99713H3.00002H6.78793L10.145 4.48017L10.4372 4ZM12.4375 6L14.87 9.99713H9.12911L11.5614 6H12.0003H12.4375ZM17.9961 16V14H19.9961V16H21.9961V18H19.9961V20H17.9961V18H15.9961V16H17.9961Z">
+                                            </path>
+                                        </svg></span></button></p>
+                                <p class="more-variants"></p>
+                            </div>
+                            <a href="#"><i class="fas fa-cart-plus fa-2x cart-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    
+    <br><br><br>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <p>This is IKEA</p>
+                <a href="">About IKEA</a>
+                <a href="">Democratic Design</a>
+                <a href="">Sustainable everyday</a>
+                <a href="">Community engagement</a>
+                <a href="">Working at IKEA</a>
+            </div>
+
+            <div class="footer-column">
+                <p>Customer service</p>
+                <a href="">About services</a>
+                <a href="">About shopping</a>
+                <a href="">Return policy</a>
+                <a href="">Contact us</a>
+                <a href="">Recalls</a>
+                <a href="">FAQ</a>
+            </div>
+
+            <div class="footer-column">
+                <p>Useful links</p>
+                <a href="">Product guides</a>
+                <a href="">IKEA Business</a>
+                <a href="">IKEA Catalogue and brochures</a>
+                <a href="">Planning tools</a>
+                <a href="">IKEA Restaurant</a>
+                <a href="">IKEA Stores</a>
+                <a href="">Mobile app</a>
+
+            </div>
+
+            <div class="footer-column">
+                <p>General Information</p>
+                <a href="">Privacy policy</a>
+                <a href="">Cookies policy</a>
+                <a href="">Newsroom</a>
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="social-media-icons">
+            <a href=""><img src="img/facebook-icon.svg" alt="Facebook icon"></a>
+            <a href=""><img src="img/instagram-icon.svg" alt="instagram icon"></a>
+            <a href=""><img src="img/linkedin-icon.svg" alt="linkedin icon"></a>
+            <a href=""><img src="img/twitter-icon.svg" alt="twitter icon"></a>
+            <a href=""><img src="img/youtube-icon.svg" alt="youtube icon"></a>
+        </div>
+
+        <p class="hr"></p>
+        <p id="credit">© Inter IKEA Systems B.V. 1999-2020 <br>
+            Mockup by Ziyad Alwagdani, Mohanad Bawazir, Turki Alsaedi</p>
+
+        <div class="links">
+            <a href="">Terms &amp; Conditions</a>
+            <a href="">Cookie policy</a>
+            <a href="">Privacy Policy</a>
+        </div>
+
+    </div>
+
+
+
+
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+
+<script>
+   // TODO: Replace the following with your app's Firebase project configuration
+   // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
+   const firebaseConfig = {
+       apiKey: "AIzaSyD9fC1yAgCTtOJAAqWOLVYn8U47v1X4-1c",
+       authDomain: "swe363-project-ce0ca.firebaseapp.com",
+       projectId: "swe363-project-ce0ca",
+       storageBucket: "swe363-project-ce0ca.appspot.com",
+       messagingSenderId: "893692700102",
+       appId: "1:893692700102:web:b7228c5d07305f7e8e3ec7",
+       measurementId: "G-LHHTMCM1SC"
+   };
+
+   // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+   const db = firebase.firestore();
+   db.settings({ timestampsInSnapshots: true }); 
+ </script>
+ 
+ <script src="itempage.js"></script>
+
+  
+    <script src="JS/auth.js"></script>
+    <script src="JS/index.js"></script>
+   
+
+</body>
+
+
+
+</html>
